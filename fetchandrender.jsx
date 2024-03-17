@@ -92,7 +92,7 @@ function App() {
   const { Fragment, useState, useEffect, useReducer } = React;
   const [query, setQuery] = useState("St. Patrick");
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 10;
+  const pageSize = 5;
   const [{ data, isLoading, isError }, doFetch] = useDataApi(
     "https://hn.algolia.com/api/v1/search?query=St. Patrick",
     {
